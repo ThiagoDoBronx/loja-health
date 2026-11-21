@@ -12,6 +12,11 @@
     fbq('init', C.pixel); fbq('track', 'PageView');
     if (m) fbq('track', 'ViewContent', {content_ids:[m.dataset.produto], content_name:m.dataset.nome, value:+m.dataset.valor, currency:'BRL'});
   }
+  document.querySelectorAll('.comprar-home').forEach(b => {
+    const link = (C.checkout || {})[b.dataset.produto];
+    if (link) b.href = link;
+    b.addEventListener('click', () => { if (window.fbq) fbq('track', 'InitiateCheckout', {content_ids:[b.dataset.produto], value:+b.dataset.valor, currency:'BRL'}); });
+  });
   if (m) {
     const link = (C.checkout || {})[m.dataset.produto];
     document.querySelectorAll('.comprar').forEach(b => {
