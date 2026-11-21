@@ -4,8 +4,8 @@ window.LOJA = {
   contato: "",        // e-mail ou WhatsApp que aparece no rodapé (a Meta pede contato)
   pixel: "",          // ID do Pixel da Meta (só números)
   checkout: {         // link de pagamento de cada produto (Mercado Pago, Yampi, Cartpanda, WooCommerce...)
-    "mini-pistola": "",
-    "colete-postura": "",
-    "pente-massageador": ""
+    "mini-pistola": "https://xwkyg1-bz.myshopify.com/cart/68386382348475:1",
+    "colete-postura": "https://xwkyg1-bz.myshopify.com/products/colete-postura",
+    "pente-massageador": "https://xwkyg1-bz.myshopify.com/cart/68386361573563:1"
   }
 };
