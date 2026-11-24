@@ -3,7 +3,7 @@
   const C = window.LOJA || {};
   document.querySelectorAll('.marca').forEach(e => { if (C.marca) e.textContent = C.marca; });
   if (C.marca) document.title = document.title.replace('SUA MARCA', C.marca);
-  document.querySelectorAll('.contato').forEach(e => { if (C.contato) e.textContent = 'Contato: ' + C.contato; });
+  document.querySelectorAll('.contato:not(.contato-fixo)').forEach(e => { if (C.contato) e.textContent = 'Contato: ' + C.contato; });
   const m = document.querySelector('main[data-produto]');
   if (C.pixel) {
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
