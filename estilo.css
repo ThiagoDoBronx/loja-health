@@ -39,7 +39,11 @@ footer{padding:28px 20px;font-size:13px;color:#777;border-top:1px solid var(--li
 header.topo-logo{justify-content:center;padding:14px 20px}
 header.topo-logo img{display:block;width:200px;height:auto}
 .card .preco{margin-top:auto}
-.grade .card h3{font-size:36px;line-height:1.12}
-.grade .card .aviso{font-size:19.5px;line-height:1.45;color:#555}
-.grade .card .preco{font-size:30px!important}
-@media(max-width:820px){.grade .card h3{font-size:30px}}
+.grade{gap:32px!important}
+.grade .card{gap:14px!important}
+.grade .card h3{font-size:44px;line-height:1.08;letter-spacing:-.5px}
+.grade .card .aviso{font-size:24px;line-height:1.4;color:#555}
+.grade .card .preco{font-size:42px!important;font-weight:500}
+.grade .card .btn{font-size:18px;padding:20px 28px}
+@media(max-width:1100px){.grade .card h3{font-size:38px}.grade .card .aviso{font-size:22px}.grade .card .preco{font-size:38px!important}}
+@media(max-width:820px){.grade .card h3{font-size:36px}.grade .card .aviso{font-size:22px}.grade .card .preco{font-size:36px!important}}
